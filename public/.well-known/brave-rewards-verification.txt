@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: myprodenba.web.app
+Token: 16f1e8661c53a6421371176cb749a9004c251bfc3758c9b8ea1c5d3476c53070

@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #1f1f1f;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+/* Estilo para ocultar las flechas en los inputs tipo number */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select,
+option {
+  color: black;
+}
+
+th,
+td {
+  /* Estilos comunes para todos los elementos td */
+  /* Puedes agregar aquí los estilos que deseas aplicar */
+  font-family: "Roboto", sans-serif; /* Ejemplo de fuente personalizada */
+  font-size: 16px; /* Ejemplo de tamaño de fuente */
+  padding: 8px; /* Ejemplo de relleno */
+  font-weight: bold;
+  border-bottom: 1px solid #6e6e6e;
+}
+.button-gray {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-gray:hover {
+  background-color: #303030;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Cambiar el color de fondo de las barras de desplazamiento */
+::-webkit-scrollbar {
+  background-color: #254441; /* Color de fondo de las barras de desplazamiento */
+  width: 10px; /* Ancho de las barras de desplazamiento */
+}
+
+/* Cambiar el color de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color de la barra de desplazamiento */
+  border-radius: 5px; /* Radio de borde de la barra de desplazamiento */
+}
+
+/* Cambiar el color de la pista de las barras de desplazamiento */
+::-webkit-scrollbar-track {
+  background-color: #1f3a37; /* Color de la pista de las barras de desplazamiento */
+}
