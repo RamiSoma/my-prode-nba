@@ -27,7 +27,7 @@ const Login = () => {
         <div
           className="relative h-screen bg-cover bg-[50%_50%]"
           style={{
-            backgroundImage: `url(/wallpapers/canchadebasquetdesdearriba.jpg)`,
+            backgroundImage: `url(/wallpapers/shai.jpg)`,
           }}
         >
           <img

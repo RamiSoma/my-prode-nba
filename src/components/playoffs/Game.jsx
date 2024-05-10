@@ -175,7 +175,7 @@ const Game = ({ team1, team2 }) => {
           />
         ) : (
           <div className="flex justify-center flex-col items-center">
-            <Image
+            <img
               width={24}
               height={24}
               className={`p-1 rounded-full mt-5 bg-[#162927] ${

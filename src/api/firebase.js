@@ -6,13 +6,13 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: FIREBASE_API_KEY,
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: "myprodenba.firebaseapp.com",
   projectId: "myprodenba",
   storageBucket: "myprodenba.appspot.com",
-  messagingSenderId: MESSAGING_SENDER_ID,
-  appId: APP_ID,
-  measurementId: MEASUREMENT_ID,
+  messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
