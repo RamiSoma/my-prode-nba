@@ -176,16 +176,15 @@ const Game = ({ team1, team2 }) => {
         ) : (
           <div className="flex justify-center flex-col items-center">
             <img
-              width={24}
-              height={24}
-              className={`p-1 rounded-full mt-5 bg-[#162927] ${
-                user && user.isAdmin ? "hidden" : ""
-              }`}
+              width={32}
+              height={32}
+              className={`p-1 mt-5 ${user && user.isAdmin ? "hidden" : ""}`}
               src="/lock.png"
             />
             {status === "finished" ? (
               <div>
-                <div className="grid grid-cols-2 gap-[20%] justify-items-center mt-8">
+                <h1 className="text-white text-2xl  mt-8">Result</h1>
+                <div className="grid grid-cols-2 gap-[20%] justify-items-center">
                   <Input
                     state={"result_team1"}
                     resultTeam={resultTeam1}

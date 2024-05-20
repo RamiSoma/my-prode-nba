@@ -17,7 +17,7 @@ export const getTeam = async (id) => {
   try {
     const response = await fetch(`https://api.balldontlie.io/v1/teams/${id}`, {
       headers: {
-        Authorization: NEXT_PUBLIC_NBA_API_KEY,
+        Authorization: process.env.NEXT_PUBLIC_NBA_API_KEY,
       },
     });
     const data = await response.json();
@@ -34,7 +34,7 @@ export const fetchPlayers = async (teamId) => {
       `https://api.balldontlie.io/v1/players?team_ids[]=${teamId}&per_page=100`,
       {
         headers: {
-          Authorization: NEXT_PUBLIC_NBA_API_KEY,
+          Authorization: process.env.NEXT_PUBLIC_NBA_API_KEY,
         },
       }
     );

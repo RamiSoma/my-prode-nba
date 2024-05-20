@@ -202,11 +202,9 @@ const SpecialPredict = () => {
       ) : (
         <div className="flex justify-center flex-col items-center">
           <img
-            width={24}
-            height={24}
-            className={`p-1 rounded-full mt-5 bg-[#162927] ${
-              user && user.isAdmin ? "hidden" : ""
-            }`}
+            width={32}
+            height={32}
+            className={`p-1 mt-5 ${user && user.isAdmin ? "hidden" : ""}`}
             src="/lock.png"
           />
         </div>
